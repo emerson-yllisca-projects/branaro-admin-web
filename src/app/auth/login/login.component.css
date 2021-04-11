@@ -1,0 +1,104 @@
+.wrapper {
+    background: #EDF2F9;
+    padding: 0 15px;
+    height: 100vh;
+}
+
+.card-r {
+    background: #fff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.col-sm-9 {
+    padding: 0;
+    padding-bottom: 13px;
+}
+
+.titulo {
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+.sub-titulo {
+    font-size: 0.8rem;
+}
+
+.login {
+    color: #2c7be5 !important;
+    font-weight: bold;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.checkbox {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+button {
+    background: #2c7be5;
+    color: #fff;
+}
+
+.relleno {
+    background: rgb(170, 169, 169);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+label {
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 480px) {
+    .card-r {
+        max-width: 500px;
+        margin: auto;
+    }
+    .flex {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .titulo {
+        font-size: 1.7rem;
+    }
+    .sub-titulo {
+        font-size: 1.1rem;
+    }
+    .desc {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .registrar {
+        padding-top: 20px;
+    }
+}

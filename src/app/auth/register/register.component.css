@@ -1,0 +1,220 @@
+.wrapper {
+    background: #EDF2F9;
+    padding: 0 15px;
+    height: 100vh;
+}
+
+.card-r {
+    background: #fff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.col-sm-9 {
+    padding: 0;
+    padding-bottom: 13px;
+}
+
+.titulo {
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+.sub-titulo {
+    font-size: 0.8rem;
+}
+
+.login {
+    color: #2c7be5 !important;
+    font-weight: bold;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.checkbox {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+button {
+    background: #2c7be5;
+    color: #fff;
+}
+
+.relleno {
+    background: rgb(170, 169, 169);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+.form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card-r .form-outer {
+    overflow: hidden;
+}
+
+
+/* progress-bar */
+
+.card-r .progress-bar-r {
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+}
+
+.card-r .progress-bar-r .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.card-r .progress-bar-r .step p {
+    /* border: 1px solid red; */
+    font-weight: 500;
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.progress-bar-r .step .bullet {
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar-r .step .bullet.active {
+    /* border: 1px solid red; */
+    border-color: #06d6a0;
+    background: #06d6a0;
+}
+
+.progress-bar-r .step .bullet span {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar-r .step .bullet.active span {
+    /* border: 1px solid red; */
+    display: none;
+}
+
+.progress-bar-r .step .bullet:before,
+.progress-bar-r .step .bullet:after {
+    /* border: 1px solid red; */
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -31px;
+    height: 3px;
+    width: 25px;
+    background: #262626;
+}
+
+.progress-bar-r .step .bullet.active:after {
+    background: #06d6a0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar-r .step:last-child .bullet:before,
+.progress-bar-r .step:last-child .bullet:after {
+    display: none;
+}
+
+.progress-bar-r .step p.active {
+    color: #06d6a0 !important;
+    transition: 0.2s linear;
+}
+
+.progress-bar-r .step .check {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar-r .step .check.active {
+    display: block;
+    color: #fff;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 480px) {
+    .card-r {
+        max-width: 500px;
+        margin: auto;
+    }
+    .progress-bar-r .step .bullet:before,
+    .progress-bar-r .step .bullet:after {
+        position: absolute;
+        content: '';
+        bottom: 11px;
+        right: -70px;
+        height: 3px;
+        width: 60px;
+        background: #262626;
+    }
+    .card-r .progress-bar-r .step p {
+        font-size: 16px;
+    }
+    .progress-bar-r .step .check {
+        left: 50%;
+        top: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 991px) {
+    .titulo {
+        font-size: 1.7rem;
+    }
+    .sub-titulo {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .registrar {
+        padding-top: 20px;
+    }
+}
